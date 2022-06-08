@@ -19,6 +19,6 @@ public class MyController {
 	}
 	@RequestMapping({"/travel"})
 	public String travel() {
-		return "/travel";
+		return "travel";
 	}
 }
