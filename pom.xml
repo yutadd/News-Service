@@ -9,10 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.yutadd</groupId>
-	<artifactId>profile</artifactId>
+	<artifactId>News</artifactId>
 	<version>0.0.1</version>
-	<name>demo-1</name>
-	<description>spring</description>
+	<name>News</name>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
@@ -70,4 +69,5 @@
 		</plugins>
 	</build>
 
+	<description>News-System</description>
 </project>
