@@ -1,4 +1,4 @@
-package profile.com.yutadd;
+package news.com.yutadd;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
