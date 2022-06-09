@@ -21,38 +21,39 @@
             <a href="/otoi" style="font-size: 40px;">お問い合わせ</a>
             </div>
         </header>
+        <form action="/result" method="POST">
         <div style="width:100%;margin:0px;background-color:#eee">
             <h2 style="padding-top:10px;font-size: 40px;text-align: center;">お問い合わせ</h2>
             <div style="margin: 0 30%;max-width: 1000px;">
                 <table>
                     <tr>
-                        <th>お問い合わせ内容<br><span style="color: red;">【必須】</span></th>
-                        <td><textarea style="padding-left: 15px;font-size:15px;padding-top:10px;border-radius: 15px;"
-                                placeholder="お問い合わせ内容" name="area" id="otoi" cols="70" rows="4"></textarea></td>
+                        <th style="min-width:100px;">お問い合わせ内容<br><span style="color: red;">【必須】</span></th>
+                        <td><textarea required="required" style="padding-left: 15px;font-size:15px;padding-top:10px;border-radius: 15px;"
+                                placeholder="お問い合わせ内容" name="otoi" id="otoi" cols="70" rows="4"></textarea></td>
                     </tr>
                     <tr>
                         <th>お名前<br><span style="color: red;">【必須】</span></th>
                         <td><input
-                                style="padding-left: 15px;font-size:15px;border-radius: 15px;margin-left:0px;border-width: 1px;padding-bottom:5px"
-                                size="10%" type="text"></td>
+                                required="required" style="padding-left: 15px;font-size:15px;border-radius: 15px;margin-left:0px;border-width: 1px;padding-bottom:5px"
+                                size="10%" type="text" name="name"></td>
                     </tr>
                     <tr>
                         <th>会社名<br></th>
                         <td><input
-                                style="padding-left: 15px;font-size:15px;border-radius: 15px;margin-left:0px;border-width: 1px;padding-bottom:5px"
-                                size="70%" type="text"></td>
+                                required="required" style="padding-left: 15px;font-size:15px;border-radius: 15px;margin-left:0px;border-width: 1px;padding-bottom:5px"
+                                size="70%" type="text" name="kaisya"></td>
                     </tr>
                     <tr>
                         <th>電話番号<br></th>
                         <td><input
-                                style="padding-left: 15px;font-size:15px;border-radius: 15px;margin-left:0px;border-width: 1px;padding-bottom:5px"
-                                size="70%" type="text"></td>
+                                required="required" style="padding-left: 15px;font-size:15px;border-radius: 15px;margin-left:0px;border-width: 1px;padding-bottom:5px"
+                                size="70%" type="text" name="phone"></td>
                     </tr>
                     <tr>
                         <th>メールアドレス<br><span style="color: red;">【必須】</span></th>
                         <td><input
-                                style="padding-left: 15px;font-size:15px;border-radius: 15px;margin-left:0px;border-width: 1px;padding-bottom:5px"
-                                size="70%" type="text"></td>
+                                required="required" style="padding-left: 15px;font-size:15px;border-radius: 15px;margin-left:0px;border-width: 1px;padding-bottom:5px"
+                                size="70%" type="text" name=mail></td>
                     </tr>
                 </table>
             </div>
@@ -62,13 +63,14 @@
                     style="padding-left: 15px;font-size:15px;padding-top:10px;border-radius: 15px;margin-left:0px;width:100%"
                     readonly name="" id="" cols="80" rows="4" placeholder="<<ここに個人情報保護方針が入ります。>>"></textarea>
                 <br>
-                <div style="text-align: center;"><input type="checkbox">個人情報の取扱いに同意する</div>
+                <div style="text-align: center;"><input type="checkbox" required="required">個人情報の取扱いに同意する</div>
                 <br><input
-                    style="border-width: 1px;;text-align: center;display: block;margin:auto;width: 100%;max-width: 200px;padding: 10px;background: white;color: black;font-weight: bold;border-radius: 15px;"
+                    style="border-width: 1px;text-align: center;display: block;margin:auto;width: 100%;max-width: 200px;padding: 10px;background: white;color: black;font-weight: bold;border-radius: 15px;"
                     type="submit">
                 <div style="padding-top:40px"></div>
             </div>
         </div>
+        </form>
         <div style="padding:5%;background-color: #202020;padding: 0 16px 0 auto;">
             <div style="text-align: center;font-size: 20px;">
                 <ul>
