@@ -26,6 +26,8 @@ public class MyController {
 		try {
 		userService.insertOne(o,n,k,p,m,request.getRemoteAddr());
 		}catch(Exception e) {
+			e.printStackTrace();
+			System.out.println("データベースにエラーが起きたため、ファイルに保存します。");
 			try {
 				FileWriter fw=new FileWriter(f,true);
 				fw.write(o+","+n+","+k+","+p+","+m+","+request.getRemoteAddr()+"\r\n");
